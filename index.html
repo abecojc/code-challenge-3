@@ -6,14 +6,15 @@
     <title>Airbnb</title>
 </head>
 <body>
+  <div class="h-screen bg-no-repeat bg-cover text-sm" style="background-image: url('images/airbnb2.jpeg')">
 
-    <div class="flex justify-between bg-blue-400 text-white p-4">
-        <div>
-            <img src="#" alt="">Logo
+    <div class="flex text-white p-4">
+        <div class="h-10 w-10">
+            <img src="images/logo.png" alt="">
         </div>
         
-        <div class="flex justify-between">
-            <div class="flex justify-between">
+        <div class="flex justify-between px-2">
+            <div class="flex justify-evenly font-thin px-12">
                 <div>
                     <a href="">Places to stay</a>
                 </div>
@@ -25,14 +26,14 @@
                 </div>
             </div>
             
-            <div class="flex justify-between">
+            <div class="flex justify-between px-2">
                 <div>
-                    <a href="">Become a host</a>
+                    <a href=""><small>Become a host</small></a>
                 </div>
                 <div>
                     <img src="" alt="">#l
                 </div>
-                <div>
+                <div class="rounded-2xl bg-white flex justify-between">
                     <div>
                         <a href=""><img src="" alt=""></a>#l
                     </div>
@@ -43,35 +44,45 @@
             </div>
         </div>
     </div>
-
-    <div>
         
-        <form class="bg-white rounded-lg flex justify-around" >
-            <div class="search">
-            <label for="">Where are you going?</label>
-            <input type="text" name="address" id="destination" placeholder="Location">
-            
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="bg-red-600>
-            
+        <form class="text-xs font-bold flex bg-white flex md:justify-evenly shadow-xl rounded-full md:mx-12 md:my-6 p-3" >
+            <div class="border-r-2 border-gray-300 flex flex-col">
+                <label>Location</label>
+                <input type="text" name="address" id="destination" placeholder="Where are you going?">
+            </div>
+    
+            <div class="border-r-2 border-gray-300 flex flex-col">
+                <label>Check in</label>
+                <input type="text" name="date1" id="date1" placeholder="Add dates">
+            </div>
+            <div class="border-r-2 border-gray-300 flex flex-col">
+                <label>Check out</label>
+                <input type="text" name="date2" id="date2" placeholder="Add dates">
+            </div>
+    
+            <div class="flex flex-col">
+                <label>Guests</label>
+                <input type="text" name="number" id="number" placeholder="Add guests">
+            </div>
+            <div class="bg-red-500 flex justify-center rounded-full h-10 w-10 m-2">
+                <button class="h-3 w-3"><img src="images/search.png" alt=""></button>
             </div>
             
         </form >
-    </div>
+  
 
-    <div>
-        <div>
+    <div class="text-white ml-10">
+        <div class="text-6xl">
             Go Near
         </div>
         <div class="text-sm">
             Settle in somewhere new. Discover stays to<br>live, work, or just relax.
         </div>
-        <div class="rounded-md bg-white p-2">
+        <div class="w-auto rounded-md bg-white text-black p-2">
             Explore nearby
         </div>
     </div>
+  </div>
 
 </body>
 </html>
